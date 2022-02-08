@@ -97,4 +97,8 @@ setInterval(autoSlide, 10000);
 // Back To Top Button
 
 const backToTop = document.querySelector('.to-top');
-const body = document.querySelector('body');
+
+backToTop.addEventListener('click', e => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+})
