@@ -30,6 +30,11 @@
     text-align: center;
 }
 
+.card-horizontal > .card-header > .card-img {
+    width: 10rem;
+    height: 12rem;
+}
+
 .card-img > img {
     border-radius: 5px 5px 0 0;
     object-fit: contain;
