@@ -11,7 +11,7 @@
 
 .card-vertical {
     min-width: 16rem;
-    max-width: 18rem;
+    max-width: 16rem;
 }
 
 .card-horizontal {
@@ -21,10 +21,6 @@
 .card-horizontal > .card-header {
     display: flex;
     flex-direction: row;
-}
-
-.card-horizontal > .card-header > .card-img {
-    height: auto;
 }
 
 .card-img {
