@@ -3,15 +3,15 @@
     position: relative;
     border-radius: 5px;
     border: 1px solid var(--light-black-1);
-    border: 1px solid var(--light-black-7);
     display: flex;
     flex-direction: column;
     background: var(--white-color);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .card-vertical {
     min-width: 16rem;
-    max-width: 18rem;
+    max-width: 16rem;
 }
 
 .card-horizontal {
@@ -24,7 +24,8 @@
 }
 
 .card-horizontal > .card-header > .card-img {
-    height: auto;
+    width: 10rem;
+    height: 12rem;
 }
 
 .card-img {
@@ -34,16 +35,28 @@
     text-align: center;
 }
 
-.card-img>img {
-    border-radius: inherit;
+.card-img > img {
+    border-radius: 5px 5px 0 0;
     object-fit: contain;
     object-position: center;
+}
+
+.card-horizontal > .card-header > .card-img > img {
+    border-radius: 5px 0 0 5px;
+    object-fit: contain;
+    object-position: left;
 }
 
 .card-body {
     padding: 20px 15px 15px;
     display: flex;
     gap: 16px;
+}
+
+.card-horizontal > .card-header > .card-body {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .card-vertical > .titles {
@@ -68,10 +81,10 @@
 }
 
 .card-tools {
-    padding: 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 4rem;
 }
 
 .card-tools>.buttons {
