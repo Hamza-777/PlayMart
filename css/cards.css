@@ -87,6 +87,10 @@
     gap: 4rem;
 }
 
+.card-vertical > .card-tools {
+    padding: 20px 15px 15px;
+}
+
 .card-tools>.buttons {
     display: flex;
     align-items: center;
@@ -95,11 +99,12 @@
 }
 
 .card-tools>.buttons>button {
+    width: fit-content;
     padding: 0.5rem 1rem;
-    border: 1px solid var(--dark-color);
     transition: var(--default-transition);
     background: var(--black-color);
     color: var(--white-color);
+    font-size: 0.75rem;
 }
 
 .card-tools>.buttons>button:hover {
