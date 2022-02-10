@@ -104,6 +104,12 @@ a {
 
 .small {
     font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.x-small {
+    font-size: 0.725rem;
+    font-weight: 600;
 }
 
 .badge {
