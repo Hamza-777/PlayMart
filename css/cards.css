@@ -47,11 +47,14 @@
 }
 
 .card-vertical > .titles {
+    max-width: 15rem;
     padding: 20px 15px 0 15px;
 }
 
 .titles>h3 {
+    max-width: 15rem;
     color: var(--secondary-color);
+    text-overflow: ellipsis;
 }
 
 .card-body>p {

@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>PlayMart | LogIn</title>
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
             <div class="navbar-left">
-                <a href="index.html" class="logo">
+                <a href="../index.html" class="logo">
                     <i class="fas fa-khanda"></i>
                     <h1>PlayMart</h1>
                 </a>
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="navbar-right">
-                <a href="login.html" class="btn btn-login">LogIn / SignUp</a>
+                <a href="./login.html" class="btn btn-login">LogIn / SignUp</a>
                 <a href="#" class="btn btn-link">
                     <i class="fas fa-heartbeat icon"></i>
                     <span class="small">WishList</span>
@@ -40,8 +40,12 @@
     </header>
     <main class="main">
         <div class="form-container">
-            <h2 class="form-title">LOGIN</h2>
+            <h2 class="form-title">SIGNUP</h2>
             <form class="login-signup-form">
+                <div class="form-item">
+                    <label for="email">Name</label>
+                    <input type="text" placeholder="Enter your name">
+                </div>
                 <div class="form-item">
                     <label for="email">Email</label>
                     <input type="email" placeholder="Enter your email">
@@ -49,22 +53,22 @@
                 <div class="form-item">
                     <label for="password">Password</label>
                     <div class="pass">
-                        <input type="password" placeholder="Enter your password" class="password">
-                        <i class="far fa-eye togglePassword"></i>
+                        <input type="password" placeholder="Enter your password" class="password pass1">
+                        <i class="far fa-eye togglePassword togglePass1"></i>
                     </div>
                 </div>
-                <div class="form-item misc-inputs">
-                    <div class="remember">
-                        <input type="checkbox" id="remember">
-                        <label for="password small">Remember Me</label>
+                <div class="form-item">
+                    <label for="password">Confirm Password</label>
+                    <div class="pass">
+                        <input type="password" placeholder="Confirm your password" class="password pass2">
+                        <i class="far fa-eye togglePassword togglePass2"></i>
                     </div>
-                    <a href="#" class="forgot">Forgot password?</a>
                 </div>
                 <div class="form-item">
                     <input type="submit" value="LOGIN">
                 </div>
             </form>
-            <a href="signup.html" class="btn btn-link">Don't have an account? SignUp &#10095;</a>
+            <a href="./login.html" class="btn btn-link">Already have an account? LogIn &#10095;</a>
         </div>
     </main>
     <footer class="footer">
@@ -104,10 +108,10 @@
                 </div>
             </div>
         </div>
-        <a href="index.html" class="logo">
+        <a href="../index.html" class="logo">
             <p>&copy; 2022 PlayMart</p>
         </a>
     </footer>
 </body>
-<script src="login.js"></script>
+<script src="../js/signup.js"></script>
 </html>
