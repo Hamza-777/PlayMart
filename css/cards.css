@@ -3,10 +3,10 @@
     position: relative;
     border-radius: 5px;
     border: 1px solid var(--light-black-1);
-    border: 1px solid var(--light-black-7);
     display: flex;
     flex-direction: column;
     background: var(--white-color);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .card-vertical {
@@ -28,6 +28,17 @@
     border-radius: 5px 5px 0 0;
     height: 15rem;
     text-align: center;
+}
+
+.card-horizontal > .card-header > .card-img {
+    width: 10rem;
+    height: 12rem;
+}
+
+.card-horizontal > .card-header > .card-img > img {
+    border-radius: 5px 0 0 5px;
+    object-fit: contain;
+    object-position: left;
 }
 
 .card-img>img {
@@ -53,6 +64,12 @@
     text-overflow: ellipsis;
 }
 
+.card-horizontal > .card-header > .card-body {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
 .card-body>p {
     color: var(--dark-color);
     font-size: 14px;
@@ -64,10 +81,14 @@
 }
 
 .card-tools {
-    padding: 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 4rem;
+}
+
+.card-vertical > .card-tools {
+    padding: 20px 15px 15px;
 }
 
 .card-tools>.buttons {
@@ -78,11 +99,12 @@
 }
 
 .card-tools>.buttons>button {
+    width: fit-content;
     padding: 0.5rem 1rem;
-    border: 1px solid var(--dark-color);
     transition: var(--default-transition);
     background: var(--black-color);
     color: var(--white-color);
+    font-size: 0.75rem;
 }
 
 .card-tools>.buttons>button:hover {

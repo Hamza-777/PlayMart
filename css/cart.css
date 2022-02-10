@@ -60,6 +60,7 @@
     flex-flow: row;
     align-items: center;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 .coupon-form > .form-item > input[type='text'] {
