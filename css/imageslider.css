@@ -22,7 +22,7 @@
     cursor: pointer;
     outline: none;
     border: none;
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--light-black-8);
     color: white;
     transition: var(--default-transition);
     text-align: center;

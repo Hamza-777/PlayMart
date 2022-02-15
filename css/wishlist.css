@@ -1,18 +1,20 @@
 .wishlist {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 3rem;
 }
 
+.wishlist > h1 {
+    align-self: center;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
 .wishlist-content {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
     gap: 2rem;
 }
 
 .card-dismiss:hover {
-    background: var(--light-black-8);
+    background: var(--light-black-9);
+}
+
+.card-dismiss > i {
+    font-size: 1.5rem;
 }

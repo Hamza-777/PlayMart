@@ -6,24 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../style.css">
-    <title>PlayMart | LogIn</title>
+    <title>PlayMart | Productlisting</title>
 </head>
 <body>
     <header class="header">
-        <nav class="navbar">
+        <nav class="navbar flex flex-row align-center justify-between">
             <div class="navbar-left">
-                <a href="../index.html" class="logo">
+                <a href="../index.html" class="logo flex-center">
                     <i class="fas fa-khanda"></i>
                     <h1>PlayMart</h1>
                 </a>
             </div>
             <div class="navbar-mid">
-                <div class="search-bar">
+                <div class="search-bar flex-center">
                     <input type="search" name="searchbar" placeholder="Search for products..." id="search-bar">
                     <button class="btn search"><i class="fas fa-search icon"></i></button>
                 </div>
             </div>
-            <div class="navbar-right">
+            <div class="navbar-right flex-center">
                 <a href="./login.html" class="btn btn-login">LogIn / SignUp</a>
                 <a href="./wishlist.html" class="btn btn-link">
                     <i class="fas fa-heartbeat icon"></i>
@@ -38,44 +38,44 @@
             </div>
         </nav>
     </header>
-    <main class="main product-display">
-        <aside class="form-container-filter">
-            <div class="filter-header">
+    <main class="main product-display flex-center align-start">
+        <aside class="form-container-filter flex flex-col">
+            <div class="filter-header flex-center justify-between">
                 <h2 class="header-title">Filter By</h2>
-                <button class="btn small clear">Clear</button>
+                <button class="btn small clear">Clear All</button>
             </div>
             <hr class="rule">
             <div class="form collection-form">
-                <div class="form-header">
+                <div class="form-header flex-center justify-between">
                     <h3 class="form-title">Collection</h3>
                     <button class="btn small minimize">-</button>
                 </div>
                 <form class="filter-form">
-                    <div class="form-item misc-inputs">
+                    <div class="form-item flex flex-col align-start misc-inputs">
                         <div class="remember">
                             <input type="checkbox" checked>
                             <label for="password x-small">All</label>
                         </div>
                     </div>
-                    <div class="form-item misc-inputs">
+                    <div class="form-item flex flex-col align-start misc-inputs">
                         <div class="remember">
                             <input type="checkbox">
                             <label for="password x-small">Sports Equipments</label>
                         </div>
                     </div>
-                    <div class="form-item misc-inputs">
+                    <div class="form-item flex flex-col align-start misc-inputs">
                         <div class="remember">
                             <input type="checkbox">
                             <label for="password x-small">Games</label>
                         </div>
                     </div>
-                    <div class="form-item misc-inputs">
+                    <div class="form-item flex flex-col align-start misc-inputs">
                         <div class="remember">
                             <input type="checkbox">
                             <label for="password x-small">Accessories</label>
                         </div>
                     </div>
-                    <div class="form-item misc-inputs">
+                    <div class="form-item flex flex-col align-start misc-inputs">
                         <div class="remember">
                             <input type="checkbox">
                             <label for="password x-small">Merchandise</label>
@@ -84,54 +84,54 @@
                 </form>
             </div>
             <div class="form rating-form">
-                <div class="form-header">
+                <div class="form-header flex-center justify-between">
                     <h3 class="form-title">Rating</h3>
                     <button class="btn small minimize">-</button>
                 </div>
                 <form class="filter-form">
-                    <div class="form-item misc-inputs">
+                    <div class="form-item flex flex-col align-start misc-inputs">
                         <div class="remember">
-                            <input type="checkbox">
+                            <input type="radio">
                             <label for="password x-small">Above 4 Stars</label>
                         </div>
                     </div>
-                    <div class="form-item misc-inputs">
+                    <div class="form-item flex flex-col align-start misc-inputs">
                         <div class="remember">
-                            <input type="checkbox">
+                            <input type="radio">
                             <label for="password x-small">Above 3 Stars</label>
                         </div>
                     </div>
-                    <div class="form-item misc-inputs">
+                    <div class="form-item flex flex-col align-start misc-inputs">
                         <div class="remember">
-                            <input type="checkbox">
+                            <input type="radio">
                             <label for="password x-small">Above 2 Stars</label>
                         </div>
                     </div>
-                    <div class="form-item misc-inputs">
+                    <div class="form-item flex flex-col align-start misc-inputs">
                         <div class="remember">
-                            <input type="checkbox">
+                            <input type="radio">
                             <label for="password x-small">Above 1 Star</label>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="form price-form">
-                <div class="form-header">
+                <div class="form-header flex-center justify-between">
                     <h3 class="form-title">Price</h3>
                     <button class="btn small minimize">-</button>
                 </div>
                 <form class="filter-form">
-                    <div class="form-item">
-                        <div class="prices">
+                    <div class="form-item flex flex-col align-start">
+                        <div class="prices flex-center justify-between">
                             <span class="small">0</span>
                             <span class="small">20,000</span>
                         </div>
-                        <input type="range" min="0" max="20000" value="5000">
+                        <input type="range" min="0" max="20000" value="5000" class="slider">
                     </div>
                 </form>
             </div>
         </aside>
-        <section class="product-list">
+        <section class="product-list flex-row-wrap align-start justify-center">
             <div class="card card-vertical">
                 <div class="card-img">
                     <img src="../products/amongus.png" alt="card image">
@@ -155,7 +155,6 @@
                     </div>
                     <div class="icons">
                         <div class="icon-container to-wishlist"><i class="far fa-heart"></i></div>
-                        <div class="icon-container"><i class="fas fa-share-alt"></i></div>
                     </div>
                 </div>
             </div>
@@ -182,7 +181,6 @@
                     </div>
                     <div class="icons">
                         <div class="icon-container to-wishlist"><i class="far fa-heart"></i></div>
-                        <div class="icon-container"><i class="fas fa-share-alt"></i></div>
                     </div>
                 </div>
             </div>
@@ -209,7 +207,6 @@
                     </div>
                     <div class="icons">
                         <div class="icon-container to-wishlist"><i class="far fa-heart"></i></div>
-                        <div class="icon-container"><i class="fas fa-share-alt"></i></div>
                     </div>
                 </div>
             </div>
@@ -236,7 +233,6 @@
                     </div>
                     <div class="icons">
                         <div class="icon-container to-wishlist"><i class="far fa-heart"></i></div>
-                        <div class="icon-container"><i class="fas fa-share-alt"></i></div>
                     </div>
                 </div>
             </div>
@@ -263,7 +259,6 @@
                     </div>
                     <div class="icons">
                         <div class="icon-container to-wishlist"><i class="far fa-heart"></i></div>
-                        <div class="icon-container"><i class="fas fa-share-alt"></i></div>
                     </div>
                 </div>
             </div>
@@ -290,7 +285,6 @@
                     </div>
                     <div class="icons">
                         <div class="icon-container to-wishlist"><i class="far fa-heart"></i></div>
-                        <div class="icon-container"><i class="fas fa-share-alt"></i></div>
                     </div>
                 </div>
             </div>
@@ -317,7 +311,6 @@
                     </div>
                     <div class="icons">
                         <div class="icon-container to-wishlist"><i class="far fa-heart"></i></div>
-                        <div class="icon-container"><i class="fas fa-share-alt"></i></div>
                     </div>
                 </div>
             </div>
@@ -344,7 +337,6 @@
                     </div>
                     <div class="icons">
                         <div class="icon-container to-wishlist"><i class="far fa-heart"></i></div>
-                        <div class="icon-container"><i class="fas fa-share-alt"></i></div>
                     </div>
                 </div>
             </div>
@@ -371,7 +363,6 @@
                     </div>
                     <div class="icons">
                         <div class="icon-container to-wishlist"><i class="far fa-heart"></i></div>
-                        <div class="icon-container"><i class="fas fa-share-alt"></i></div>
                     </div>
                 </div>
             </div>
@@ -398,7 +389,6 @@
                     </div>
                     <div class="icons">
                         <div class="icon-container to-wishlist"><i class="far fa-heart"></i></div>
-                        <div class="icon-container"><i class="fas fa-share-alt"></i></div>
                     </div>
                 </div>
             </div>
@@ -425,7 +415,6 @@
                     </div>
                     <div class="icons">
                         <div class="icon-container to-wishlist"><i class="far fa-heart"></i></div>
-                        <div class="icon-container"><i class="fas fa-share-alt"></i></div>
                     </div>
                 </div>
             </div>
@@ -452,43 +441,42 @@
                     </div>
                     <div class="icons">
                         <div class="icon-container to-wishlist"><i class="far fa-heart"></i></div>
-                        <div class="icon-container"><i class="fas fa-share-alt"></i></div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="footer-nav">
-            <div class="footer-nav-item">
+        <div class="footer-nav flex align-start justify-around">
+            <div class="footer-nav-item flex-center flex-col align-start">
                 <h3>Products We Offer</h3>
-                <div class="footer-list">
+                <div class="footer-list flex-center flex-col align-start">
                     <a href="#" class="footer-item">Sports Equipments</a>
                     <a href="#" class="footer-item">Games</a>
                     <a href="#" class="footer-item">Gaming Accessories</a>
                     <a href="#" class="footer-item">Merchandise</a>
                 </div>
             </div>
-            <div class="footer-nav-item">
+            <div class="footer-nav-item flex-center flex-col align-start">
                 <h3>Get to know us</h3>
-                <div class="footer-list">
+                <div class="footer-list flex-center flex-col align-start">
                     <a href="#" class="footer-item">About Us</a>
                     <a href="#" class="footer-item">Contact Us</a>
                     <a href="#" class="footer-item">Press</a>
                 </div>
             </div>
-            <div class="footer-nav-item">
+            <div class="footer-nav-item flex-center flex-col align-start">
                 <h3>Help</h3>
-                <div class="footer-list">
+                <div class="footer-list flex-center flex-col align-start">
                     <a href="#" class="footer-item">Payment</a>
                     <a href="#" class="footer-item">Shipping</a>
                     <a href="#" class="footer-item">Cancellation & return</a>
                     <a href="#" class="footer-item">FAQ</a>
                 </div>
             </div>
-            <div class="footer-nav-item">
+            <div class="footer-nav-item flex-center flex-col align-start">
                 <h3>Social</h3>
-                <div class="footer-list">
+                <div class="footer-list flex-center flex-col align-start">
                     <a href="#" class="footer-item"><i class="fa-brands fa-facebook-square"></i></a>
                     <a href="#" class="footer-item"><i class="fa-brands fa-twitter-square"></i></a>
                     <a href="#" class="product"><i class="fa-brands fa-instagram-square"></i></a>
