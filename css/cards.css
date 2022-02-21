@@ -98,6 +98,7 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
+    margin-left: 0;
 }
 
 .card-tools>.buttons>button {
@@ -110,6 +111,7 @@
 }
 
 .card-tools>.buttons>button:hover {
+    background: var(--black-color);
     transform: scale(0.98);
 }
 
@@ -132,6 +134,7 @@
 }
 
 .icon-container:hover {
+    background: transparent;
     color: var(--badge-color);
     transform: scale(1.1);
 }
